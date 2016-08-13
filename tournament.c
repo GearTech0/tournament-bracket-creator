@@ -32,7 +32,7 @@ int main()
     {
         chosennums[i] = rostsize+1;
     }
-//    printf("PLAYER 1\tvs\tPLAYER 2\n\n");
+    
     while(iter < rostsize/2)
     {
         while(!checknum(chosennums, number)) number = rand()%rostsize+1;
@@ -47,6 +47,7 @@ int main()
         number = rand()%rostsize+1;
         iter+=1;
     }
+    
+    fclose(ofp);
     return 0;
-    //ofp = fopen("tournament.txt", "r");
 }
